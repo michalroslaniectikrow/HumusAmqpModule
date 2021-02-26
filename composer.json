@@ -1,8 +1,15 @@
 {
     "name": "prolic/humus-amqp-module",
     "type": "library",
-    "description": "AMQP module for Zend Framework 2 to integrate RabbitMQ",
-    "keywords": ["zf2", "rabbit", "rabbitmq", "queue", "amqp", "humus"],
+    "description": "AMQP module for Laminas to integrate RabbitMQ",
+    "keywords": [
+        "laminas",
+        "rabbit",
+        "rabbitmq",
+        "queue",
+        "amqp",
+        "humus"
+    ],
     "homepage": "https://github.com/prolic/HumusAmqpModule",
     "license": "MIT",
     "authors": [
@@ -13,15 +20,15 @@
     ],
     "require": {
         "php": "^7.4",
-        "prolic/humus-amqp"  : "^2.0",
+        "prolic/humus-amqp": "^2.0",
         "psr/container": "^1.0",
         "sandrokeil/interop-config": "^1.0 || ^2.0",
         "symfony/console": "^4.3|^5.0",
-        "zendframework/zend-modulemanager": "^2.8.4",
-        "zendframework/zend-mvc": "^2.7.15"
+        "laminas/laminas-modulemanager": "^2.8.4",
+        "laminas/laminas-mvc": "^2.7.15"
     },
     "require-dev": {
-	"friendsofphp/php-cs-fixer": "^2.16.1",
+        "friendsofphp/php-cs-fixer": "^2.16.1",
         "phpunit/phpunit": "^9.0",
         "prooph/php-cs-fixer-config": "^0.3",
         "php-coveralls/php-coveralls": "^2.1"
@@ -30,7 +37,6 @@
         "psr-4": {
             "HumusAmqpModule\\": "src/",
             "HumusAmqpModuleTest\\": "tests/"
-
         }
     },
     "bin": [
