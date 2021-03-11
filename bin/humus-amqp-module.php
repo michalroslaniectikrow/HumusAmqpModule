@@ -30,18 +30,18 @@ declare(strict_types=1);
 
 use Zend\Mvc\Application;
 
-\ini_set('display_errors', true);
+\ini_set('display_errors', '1');
 \chdir(__DIR__);
 
 $previousDir = '.';
 
-while (! \file_exists('config/application.config.php')) {
+while (!\file_exists('config/application.config.php')) {
     $dir = \dirname(\getcwd());
 
     if ($previousDir === $dir) {
         throw new RuntimeException(
             'Unable to locate "config/application.config.php": ' .
-            'is DoctrineModule in a subdir of your application skeleton?'
+                'is DoctrineModule in a subdir of your application skeleton?'
         );
     }
 
