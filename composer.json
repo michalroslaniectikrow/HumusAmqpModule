@@ -19,19 +19,19 @@
         }
     ],
     "require": {
-        "php": "^7.4",
-        "prolic/humus-amqp": "^2.0",
+        "php": "^8.0",
+        "prolic/humus-amqp": "^2.1",
         "psr/container": "^1.0",
-        "sandrokeil/interop-config": "^1.0 || ^2.0",
-        "symfony/console": "^4.3|^5.0",
-        "laminas/laminas-modulemanager": "^2.8.4",
-        "laminas/laminas-mvc": "^3.0.1"
+        "sandrokeil/interop-config": "^2.2",
+        "symfony/console": "^5.4",
+        "laminas/laminas-modulemanager": "^2.12",
+        "laminas/laminas-mvc": "^3.3"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16.1",
-        "phpunit/phpunit": "^9.0",
-        "prooph/php-cs-fixer-config": "^0.3",
-        "php-coveralls/php-coveralls": "^2.1"
+        "friendsofphp/php-cs-fixer": "^3.11",
+        "phpunit/phpunit": "^9.5",
+        "php-coveralls/php-coveralls": "^2.5",
+        "prooph/php-cs-fixer-config": "^0.5.0"
     },
     "autoload": {
         "psr-4": {
